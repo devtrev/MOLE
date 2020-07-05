@@ -1,6 +1,9 @@
 import urllib.request, urllib.error
+from unittest import TestCase
 
 print("Docker is magic!")
+
+assert True
 
 urlList = dict({
 'Google': 'http://www.google.com', 
@@ -23,3 +26,5 @@ for key, url in urlList.items():
     	# Not an HTTP-specific error (e.g. connection refused)
     	# ...
         print(key + ' : 200')
+
+assert True
