@@ -3,8 +3,6 @@ from unittest import TestCase
 
 print("Docker is magic!")
 
-assert True
-
 urlList = dict({
 'Google': 'http://www.google.com', 
 'Google_bad': 'http://www.google.com/aaaa',
@@ -27,4 +25,9 @@ for key, url in urlList.items():
     	# ...
         print(key + ' : 200')
 
-assert True
+
+def capital_case(x):
+    return x.capitalize()
+
+def test_capital_case():
+    assert capital_case('semaphore') == 'Semaphore'
